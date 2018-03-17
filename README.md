@@ -26,11 +26,13 @@ Python 3.6.3 (default, Nov 21 2017, 14:55:19)
 [GCC 6.4.0] on linux                                                                                                           
 Type "help", "copyright", "credits" or "license" for more information.                                                         
 >>> exit()
+
 $ bin/python  # second run is cached, changes in requirements.txt invalidate the cache
 Python 3.6.3 (default, Nov 21 2017, 14:55:19)                                                                                 
 [GCC 6.4.0] on linux                                                                                                           
 Type "help", "copyright", "credits" or "license" for more information.                                                         
 >>> exit()
+
 $ bin/runserver # runserver uses the python image as base iamge
 + touch /entrypoint                                                                                                           
 + echo #!/bin/sh                                                                                                               
