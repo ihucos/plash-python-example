@@ -9,5 +9,5 @@
 --write-script
 /entrypoint
 #!/bin/sh
-export FLASK_APP=httpserver.py
+export FLASK_APP=app.py
 exec flask run --host=localhost
