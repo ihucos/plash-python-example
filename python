@@ -11,6 +11,7 @@ py3-pip
 --layer
 
 --align-cwd
-
+--watch
+./requirements.txt
 --run
 pip3 install -r ./requirements.txt
