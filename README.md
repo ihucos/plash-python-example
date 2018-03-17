@@ -47,7 +47,13 @@ $ bin/runserver # runserver uses the python image as base iamge
 ## some recipes
 
 Run shell in container
-`plash run --include bin/runserver`
+```
+plash run --include bin/runserver
+```
+Build the cache
+```
+plash build --include bin/runserver
+```
 
 ### Status
 Works but api not stable and small details that need more thought and real usage
