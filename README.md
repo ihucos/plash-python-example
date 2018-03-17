@@ -6,6 +6,7 @@ If the file `requirements.txt` changes the python executable will be rebuild wit
 
 The `./bin/runserver` script inherits from the executable python build script and starts the server, it is also a normal process and can for example be daemonized with [supervisord](http://supervisord.org/).
 
+## Shell session
 ```
 $ bin/python                                                                                   
 Fetch  [0%|10%|20%|30%|40%|50%|60%|70%|80%|90%|100%]                                                                           
