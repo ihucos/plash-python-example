@@ -54,6 +54,14 @@ Build the cache
 ```
 plash build --include bin/runserver
 ```
+Delete the cache
+```
+plash rm -i alpine --namespace plash-python-example
+```
+Import image in docker
+```
+plash export-tar -I bin/python | docker import - 
+```
 
 ### Status
 Works but api not stable and small details that need more thought and real usage
