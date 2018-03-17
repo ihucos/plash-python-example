@@ -44,5 +44,10 @@ $ bin/runserver # runserver uses the python image as base iamge
  * Running on http://localhost:5000/ (Press CTRL+C to quit)    
 ```
 
+## some recipes
+
+Run shell in container
+`plash run --include bin/runserver`
+
 ### Status
 Works but api not stable and small details that need more thought and real usage
