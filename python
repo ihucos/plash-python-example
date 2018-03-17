@@ -1,0 +1,16 @@
+#!/usr/bin/env plash-exec
+# plash-exec: exec=/usr/bin/python3
+
+--image
+alpine
+
+--apk
+python3
+py3-pip
+
+--layer
+
+--align-cwd
+
+--run
+pip3 install -r ./requirements.txt
