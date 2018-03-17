@@ -2,7 +2,7 @@
 # plash-exec: exec=/entrypoint
 
 --include
-./python
+./bin/python
 
 --layer
 
