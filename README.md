@@ -49,20 +49,13 @@ $ bin/runserver # runserver uses the python image as base iamge
 
 Run shell in container
 ```
-plash run --include bin/runserver
+plash run --eval-file bin/runserver
 ```
 Build the cache
 ```
-plash build --include bin/runserver
-```
-Delete the cache
-```
-plash rm -i alpine --namespace plash-python-example
+plash build --eval-file bin/runserver
 ```
 Import image in docker
 ```
-plash export-tar -I bin/python | docker import - 
+plash export-tar --eval-file bin/python | docker import - 
 ```
-
-### Status
-Works but api not stable and small details that need more thought and real usage

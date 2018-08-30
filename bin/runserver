@@ -1,13 +1,8 @@
 #!/usr/bin/env plash-exec
-# plash-exec: exec=/entrypoint
 
---include
-./bin/python
-
+--eval-file ./bin/python
 --layer
-
---write-script
-/entrypoint
+--entrypoint-script
 #!/bin/sh
 export FLASK_APP=app.py
 exec flask run --host=localhost

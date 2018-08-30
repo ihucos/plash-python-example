@@ -1,8 +1,9 @@
 #!/usr/bin/env plash-exec
-# plash-exec: exec=/usr/bin/python3
 
---image
+--from
 alpine
+
+--entrypoint /usr/bin/python3
 
 --apk
 python3
@@ -10,8 +11,6 @@ py3-pip
 
 --layer
 
---align-cwd
---watch
-./requirements.txt
+--hash-path ./requirements.txt
 --run
-pip3 install -r ./requirements.txt
+pip3 install --no-cache-dir -r ./requirements.txt
